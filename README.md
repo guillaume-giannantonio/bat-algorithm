@@ -1,3 +1,4 @@
+<p align="center"><img src="./bat-algorithm-logo.png"></p>
 <h1 align="center">bat-algorithm</h1>
 <p align="center">A simple JavaScript library implementing the Bat Algorithm for optimization problems.</p>
 
