@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/npm/v/bat-algorithm"/>
 </p>
 
-<h1>🌟 Introduction</h1>
+<h1 id="introduction">🌟 Introduction</h1>
 <p>The Bat Algorithm is a nature-inspired optimization algorithm designed to solve complex optimization problems. Mimicking the echolocation behavior of bats, it balances exploration and exploitation to efficiently search for optimal solutions. In this project, we provide a simple JavaScript implementation of the Bat Algorithm, offering a user-friendly batAlgorithm() function with customizable parameters. By integrating this algorithm into your JavaScript projects, you can leverage its power to tackle a wide range of optimization tasks.</p>
 
 <h1>⚠️ Considerations</h1>
@@ -95,6 +95,11 @@ const result = batAlgorithm(sphere, 10000, 100, 30, 2, 1, -10, 10, 0, 10);
       <td><p align="center">-</p></td>
       <td>The cost function to be minimized.</td>
     </tr>
+	  <tr>
+      <td>folderPath</td>
+      <td><p align="center">-</p></td>
+      <td>The folder path to save the data in.(see <a href="#introduction">here</a></td>
+    </tr>
     <tr>
       <td>maxGen</td>
       <td>1000</td>
@@ -143,7 +148,7 @@ const result = batAlgorithm(sphere, 10000, 100, 30, 2, 1, -10, 10, 0, 10);
   </tbody>
 </table>
 
-<h1>👥 Authors</h1>
+<h1 id="-authors">👥 Authors</h1>
 <p>Guillaume Giannantonio/p>
 
 <h1>🔖 References</h1>
