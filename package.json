@@ -1,0 +1,43 @@
+{
+  "name": "bat-algorithm",
+  "version": "1.0.0",
+  "description": "A simple JavaScript library implementing the Bat Algorithm for optimization problems.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ykarux/bat-algorithm.git"
+  },
+  "keywords": [
+    "bat algorithm",
+    "optimization",
+    "metaheuristic",
+    "nature-inspired",
+    "algorithm",
+    "library",
+    "JavaScript",
+    "optimization problems",
+    "numerical optimization",
+    "heuristic search",
+    "global optimization",
+    "function optimization",
+    "feature selection",
+    "parameter tuning",
+    "mathematical optimization",
+    "swarm intelligence",
+    "algorithmic optimization",
+    "evolutionary algorithms",
+    "numerical computing",
+    "algorithm development",
+    "open source",
+    "npm package"
+  ],
+  "author": "Guillaume Giannantonio <giannantoniogui@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ykarux/bat-algorithm/issues"
+  },
+  "homepage": "https://github.com/Ykarux/bat-algorithm#readme"
+}
