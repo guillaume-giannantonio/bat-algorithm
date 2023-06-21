@@ -7,10 +7,25 @@
   <img src="https://img.shields.io/npm/v/bat-algorithm"/>
 </p>
 
-<h1>🌟 Introduction</h1>
+<h1>📑 Table of contents</h1>
+<ul>
+	<li><a href="#introduction">Introduction</a></li>
+	<li><a href="#considerations">Considerations</a></li>
+	<li><a href="#installation">Installation</a></li>
+	<li><a href="#usage">Usage</a></li>
+	<ul>
+		<li><a href="#example">Example</a></li>
+		<li><a href="#arguments">Arguments</a></li>
+	</ul>
+	<li><a href="output">Output</a></li>
+	<li><a href="authors">Authors</a></li>
+	<li><a href="references">References</a></li>
+</ul>
+
+<h1 id="introduction">🌟 Introduction</h1>
 <p>The Bat Algorithm is a nature-inspired optimization algorithm designed to solve complex optimization problems. Mimicking the echolocation behavior of bats, it balances exploration and exploitation to efficiently search for optimal solutions. In this project, we provide a simple JavaScript implementation of the Bat Algorithm, offering a user-friendly batAlgorithm() function with customizable parameters. By integrating this algorithm into your JavaScript projects, you can leverage its power to tackle a wide range of optimization tasks.</p>
 
-<h1>⚠️ Considerations</h1>
+<h1 id="considerations">⚠️ Considerations</h1>
 <p>When implementing the Bat Algorithm in JavaScript, it's essential to consider the language's suitability. Here's why JavaScript may not be the optimal choice for utilizing the Bat Algorithm:  </p>
 <ol>
   <li>Numerical Computation Limitations:</li>
@@ -40,7 +55,7 @@
   <p>
 Please assess your project requirements and consider these aspects before choosing JavaScript as the implementation language for the Bat Algorithm.</p>
 
-<h1>⚙️ Installation</h1>
+<h1 id="installation">⚙️ Installation</h1>
 <p>You can install the bat-algorithm library using npm, the Node.js package manager. Before proceeding, ensure that you have Node.js and npm installed on your system.</p>
 
 ```bash
@@ -50,18 +65,16 @@ npm install bat-algorithm
 
 ```javascript
 const { batAlgorithm } = require('bat-algorithm');
-// or
-import { batAlgorithm } from 'bat-algorithm';
 ```
 
 <p>Note: This library requires Node.js version 12 or above.</p>
 
-<h1>📘 Usage</h1>
+<h1 id="usage">📘 Usage</h1>
 <p>To use the batAlgorithm() function from the bat-algorithm library, follow the example below:</p>
-<h3>Example</h3>
+<h3 id="example">Example</h3>
 
 ```javascript
-const { batAlgorithm } = require('bat-algorithm');
+const batAlgorithm = require('bat-algorithm');
 
 // Define the cost function
 function sphere(x) {
@@ -73,11 +86,11 @@ function sphere(x) {
 }
 
 // Call the batAlgorithm() function with optional parameters
-const result = batAlgorithm(sphere);
-const result = batAlgorithm(sphere, 10000, 100, 30, 2, 1, -10, 10, 0, 10);
+const result = await batAlgorithm(sphere);
+const result = await batAlgorithm(sphere, "./myFolder", 150, 10000, 100, 30, 2, 1, -10, 10, 0, 10);
 ```
 <p>Please ensure that you provide a valid cost function as the first argument when calling the batAlgorithm() function. Customize the optional parameters as needed to suit your optimization problem.</p>
-<h3>Arguments</h3>
+<h3 id="arguments">Arguments</h3>
 
 <p>Here is a table listing the arguments that can be passed to the batAlgorithm() function, along with their default values and descriptions:</p>
 
@@ -94,6 +107,16 @@ const result = batAlgorithm(sphere, 10000, 100, 30, 2, 1, -10, 10, 0, 10);
       <td>costFunc</td>
       <td><p align="center">-</p></td>
       <td>The cost function to be minimized.</td>
+    </tr>
+	  <tr>
+      <td>folderPath</td>
+      <td><p align="center">-</p></td>
+      <td>The folder path to save the data in.(see <a href="#output">output)</a></td>
+    </tr>
+	  <tr>
+      <td>saveRate</td>
+      <td>100</td>
+      <td>The rate at wich data is saved.(see <a href="#output">output)</a></td>
     </tr>
     <tr>
       <td>maxGen</td>
@@ -143,8 +166,17 @@ const result = batAlgorithm(sphere, 10000, 100, 30, 2, 1, -10, 10, 0, 10);
   </tbody>
 </table>
 
-<h1>👥 Authors</h1>
+<h1 id="output">📊 Output</h1>
+<p>This library provides an easy and accessible way to save all or part of the computed data during the execution of the Bat Algorithm. The function is asynchronous and returns a Promise, which is resolved at the end of the Bat Algorithm execution, providing an array representing the positions of the best individual at the end of the call. (see <a href="#example">example</a>)</p>
+
+<p>Additionally, the library offers data recording functionalities. If the function receives a second parameter, it will be treated (if not undefined) as the path of the directory where the data should be saved. It is also possible to modify the "save pulse" parameter by passing a number as the third argument (optional, with a default value of 100). When a second argument is provided to the function, data will be recorded every x generations (where x is the save pulse value, which can be modified).</p>
+
+<p>Each recording is saved as a JSON file, created at each recording occurrence. Therefore, multiple files are generated with a single function call. The JSON file includes essential data such as generation number, loudness array, pulse rate array, frequency array, position array, velocity array, and the best individual.</p>
+
+<p>Feel free to explore and utilize these data recording capabilities to monitor and analyze the progress and results of the Bat Algorithm in your projects.</p>
+
+<h1 id="authors">👥 Authors</h1>
 <p>Guillaume Giannantonio/p>
 
-<h1>🔖 References</h1>
+<h1 id="references">🔖 References</h1>
 <p>Yang, X.-S. "A new metaheuristic bat-inspired algorithm." Nature inspired cooperative strategies for optimization (NICSO 2010). Springer Berlin Heidelberg, 2010. 65-74.</p>

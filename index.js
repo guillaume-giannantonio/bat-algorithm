@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 function batAlgorithm(costFunc,
-                      filePath = undefined,
+                      folderPath = undefined,
                       saveRate = 100,
                       maxGen = 1000,
                       popSize = 50,
@@ -57,9 +57,9 @@ function batAlgorithm(costFunc,
 			bestBat = position[indexMin]; // best bat so far
 
 			// printing output in a json file if a path is provided and generation matches save rate
-			if(filePath !== undefined && (gen % saveRate === 0 || gen === 1)) {
+			if(folderPath !== undefined && (gen % saveRate === 0 || gen === 1)) {
 				let data = {};
-				let resolvedPath = path.resolve(filePath);
+				let resolvedPath = path.resolve(folderPath);
 
 				data.gen = gen;
 				data.loudness = loudness;
