@@ -2,14 +2,6 @@ const getRdn = require('./utils/getRdn')
 const average = require('./utils/average')
 const checkBound = require('./utils/checkBound')
 
-function sphere(x) {
-	let sum = 0
-	for (let i = 0; i < x.length; i++) {
-		sum += x[i] * x[i]
-	}
-	return sum
-}
-
 function batAlgorithm(costFunc,
                       maxGen = 1000,
                       popSize = 50,
@@ -95,7 +87,5 @@ function batAlgorithm(costFunc,
 		}
 	}
 }
-
-batAlgorithm(sphere)
 
 module.exports = batAlgorithm
