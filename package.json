@@ -1,6 +1,6 @@
 {
   "name": "bat-algorithm",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple JavaScript library implementing the Bat Algorithm for optimization problems.",
   "main": "index.js",
   "scripts": {
