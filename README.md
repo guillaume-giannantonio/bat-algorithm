@@ -74,6 +74,7 @@ function sphere(x) {
 
 // Call the batAlgorithm() function with optional parameters
 const result = batAlgorithm(sphere);
+const result = batAlgorithm(sphere, 10000, 100, 30, 2, 1, -10, 10, 0, 10)
 ```
 <p>Please ensure that you provide a valid cost function as the first argument when calling the batAlgorithm() function. Customize the optional parameters as needed to suit your optimization problem.</p>
 <h3>Arguments</h3>
