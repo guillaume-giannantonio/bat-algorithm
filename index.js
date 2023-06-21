@@ -19,6 +19,12 @@ function batAlgorithm(costFunc, popSize = 50, dimension = 30, maxLoudness = 2, m
 			velocity[i][j] = getRdn(lowerBound, upperBound)
 		}
 	}
+
+	// evaluate the bats after initialization
+	let cost = []
+	for (let i = 0; i < popSize; i++) {
+		cost[i] = costFunc(i)
+	}
 }
 
 module.exports = batAlgorithm
