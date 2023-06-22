@@ -176,7 +176,7 @@ const result = await batAlgorithm(sphere, "./myFolder", 150, 10000, 100, 30, 2, 
 <p>Feel free to explore and utilize these data recording capabilities to monitor and analyze the progress and results of the Bat Algorithm in your projects.</p>
 
 <h1 id="authors">👥 Authors</h1>
-<p>Guillaume Giannantonio/p>
+<p>Guillaume Giannantonio</p>
 
 <h1 id="references">🔖 References</h1>
 <p>Yang, X.-S. "A new metaheuristic bat-inspired algorithm." Nature inspired cooperative strategies for optimization (NICSO 2010). Springer Berlin Heidelberg, 2010. 65-74.</p>
