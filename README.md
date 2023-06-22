@@ -110,7 +110,7 @@ const result = await batAlgorithm(sphere, "./myFolder", 150, 10000, 100, 30, 2, 
     </tr>
 	  <tr>
       <td>folderPath</td>
-      <td><p align="center">-</p></td>
+      <td>undefined</td>
       <td>The folder path to save the data in.(see <a href="#output">output)</a></td>
     </tr>
 	  <tr>
